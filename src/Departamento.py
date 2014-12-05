@@ -59,6 +59,7 @@ class Departamento():
         :return: Nombre del departamento
         :rtype: str
         """
+        a=2
         return self.nombre_depto
 
     def get_salario_total_mensual(self):
