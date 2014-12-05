@@ -4,6 +4,7 @@ python:
 #command to install dependencies
 install:
     - pip install pytest pytest-cov
+    - pip install coveralls
     - pip install radon
     - pip install pep8
     - pip install mockito
@@ -21,8 +22,9 @@ after_success:
     - pep8 --statistics ./tests
     - pep8 --count ./src
     - pep8 --count ./tests
+    - coveralls
 notifications:
   email:
     recipients:
       - boloicos@hotmail.com
-    on_failure: [always|never|change] # default: always
+    on_failure: always
