@@ -27,4 +27,5 @@ notifications:
   email:
     recipients:
       - boloicos@hotmail.com
+    on_success: never
     on_failure: always
