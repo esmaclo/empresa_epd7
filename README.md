@@ -1,1 +1,2 @@
 [![Build Status](https://travis-ci.org/esmaclo/empresa_epd7.svg)](https://travis-ci.org/esmaclo/empresa_epd7)
+[![Coverage Status](https://coveralls.io/repos/esmaclo/empresa_epd7/badge.png?branch=master)](https://coveralls.io/r/esmaclo/empresa_epd7?branch=master)
