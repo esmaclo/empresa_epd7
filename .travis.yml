@@ -4,14 +4,12 @@ python:
 #command to install dependencies
 install:
     - pip install pytest pytest-cov
-    - pip install coveralls
     - pip install radon
     - pip install pep8
     - pip install mockito
 #command to run tests
 script:
     - py.test -cov. -cov-report term-missing
-
 after_success:
     - radon cc ./src
     - radon cc ./tests
@@ -23,8 +21,6 @@ after_success:
     - pep8 --statistics ./tests
     - pep8 --count ./src
     - pep8 --count ./tests
-    - coveralls
-
 notifications:
   email:
     recipients:
